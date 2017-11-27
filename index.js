@@ -9,12 +9,16 @@ const logDriversByHometown = function(drivers, location){
   drivers.forEach(function(driver){
     if(driver.hometown === location){
       console.log(driver.name);
-    }
-  })
-}
+    };
+  });
+};
 
 const driversByRevenue = function(drivers){
   return drivers.slice(0).sort(function(driver1, driver2){
     return driver1.revenue-driver2.revenue;
-  })
+  });
+};
+
+const driversByName = function(drivers){
+  return drivers.sort();
 }
